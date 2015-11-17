@@ -3,7 +3,9 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'roommatable',
-    environment: environment,
+    // TODO:
+    // environment: environment,
+    environment: 'development',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -20,6 +22,17 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+
+    ENV.contentSecurityPolicyHeader = 'Content-Security-Policy';
+    ENV.contentSecurityPolicy = {
+      'default-src': "*",
+      'font-src': "*",
+      'img-src': "*",
+      'style-src': "* 'unsafe-inline'",
+      'media-src': "*",
+      'script-src': "*",
+      'connect-src': "*"
+    }
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
