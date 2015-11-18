@@ -15,6 +15,10 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /*TODO: separate and concatonate css files*/
+
+input::-webkit-input-placeholder {
+   color: grey !important;
+}
 .home-header {
   color: white;
   height: 1200px;
@@ -26,15 +30,24 @@
 .welcome {
   padding-left: 3px;
   width: 240px;
-  border: 2px solid #73AD21;
+  /*border: 2px solid #73AD21;*/
+  border: 2px solid #CCFFCC;
   border-radius: 25px;
 }
 
+.home-form {
+  width: 200px !important;
+}
+
 .search-form {
-  float: none;
+  text-align: center;
+  margin-top: 100px;
+  width: 100% !important;
+
+  /*float: none;
   margin: 0 auto;
   margin-top: 445px;
-  text-align: center;
+  text-align: center;*/
 }
 
 html {
