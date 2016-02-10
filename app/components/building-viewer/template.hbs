@@ -1,0 +1,11 @@
+<h3 {{action 'toggleDetails' property}}>{{property.name}} </h3>
+{{#if showDetails}}
+  {{#each unit in property.units}}
+    <ul>
+      <li>
+        <h4>Beds: {{unit.bedrooms}}, Baths: {{unit.bathrooms}} </h4>
+    	<h4>Rent per room: {{unit.rent}}</h4>
+      </li>
+    </ul>
+  {{/each}}
+{{/if}}

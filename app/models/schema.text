@@ -1,0 +1,34 @@
+User:
+- ID
+- Name
+- Bio
+- has_many :pictures
+- has_many :units (many to many)
+
+
+Property:
+- ID
+- Name
+- Address
+- hasMany :unit
+
+** also include ability to search via user
+
+Unit:te('activity');
+  var posting = server.create('posting');
+  var field = server.create('genericField', {'activity-id': activity.id, 'title': 'Welcome to the study, I am a giant peach', 'position': 1, 'kind': 'instructional_text'});
+  var paragraphField = server.create('paragraphField');
+  var paragraphField2 = server.create('paragraphField');
+  var paragraphTextRequest 
+- ID
+- belongsTo :property
+- hasMany :user (many to many)
+- bedrooms
+- baths
+- allows_pets
+- other_amenities (etc)
+
+Message:
+-ID
+-
+
